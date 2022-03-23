@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Theme Switching",
+  "name": "Theme Switching in React Using Styled-Components",
   "icons": [
     {
       "src": "favicon.ico",
