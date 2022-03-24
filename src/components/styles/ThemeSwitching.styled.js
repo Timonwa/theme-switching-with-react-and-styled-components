@@ -11,7 +11,7 @@ export const ThemeContainer = styled.div`
 `;
 
 export const ThemeButton = styled.button`
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 10px;
   font-size: 0.5rem;
   border: 1px solid ${({ theme }) => theme.colors.border};

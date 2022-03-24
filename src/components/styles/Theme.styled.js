@@ -17,9 +17,9 @@ export const light = {
 };
 export const dark = {
   colors: {
-    primary: "rgb(40, 40, 40)",
-    footer: "rgb(200, 200, 200)",
-    background: "rgb(50, 50, 50)",
+    primary: "rgb(50, 50, 50)",
+    footer: "rgb(238, 238, 238)",
+    background: "rgb(41, 40, 40)",
     text: "rgb(255, 255, 255)",
     quoteTitle: "rgb(255, 255, 255)",
     quoteBody: "rgb(255, 255, 255)",

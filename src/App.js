@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Quotes from "./components/Quotes";
 import { Container } from "./components/styles/Container.styled";
 import { Footer } from "./components/styles/Footer.styled";
