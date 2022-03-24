@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  border: 1px solid green;
+  background-color: ${({ theme }) => theme.colors.quoteBgc};
+  border: 1px solid ${({ theme }) => theme.colors.quoteBorder};
   margin-bottom: 20px;
+  border-radius: 3px;
 `;
 
 export const CardTitle = styled.div`
-  color: red;
+  color: ${({ theme }) => theme.colors.quoteTitle};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.quoteBorder};
   text-align: center;
   padding: 10px;
-  border-bottom: 1px solid green;
+  font-weight: bold;
 `;
 
 export const CardQuote = styled.div`
-  color: blue;
+  color: ${({ theme }) => theme.colors.quoteBody};
   padding: 10px;
 `;
