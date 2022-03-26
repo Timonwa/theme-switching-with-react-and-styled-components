@@ -11,15 +11,15 @@ import { GlobalStyles } from "./components/styles/Global";
 import {
   light,
   dark,
-  oceanwave,
-  camouflage,
-  sunshine,
-  barbie,
+  blue,
+  green,
+  orange,
+  pink,
 } from "./components/styles/Theme.styled";
 
 function App() {
   // theme state
-  const [selectedTheme, setSelectedTheme] = useState(light);
+  const [selectedTheme, setSelectedTheme] = useState(orange);
 
   // react hook to get the theme selected by the user that is saved in local storage
   useEffect(() => {
@@ -50,21 +50,17 @@ function App() {
             className={`dark ${selectedTheme === dark ? "active" : ""}`}
             onClick={() => HandleThemeChange(dark)}></ThemeButton>
           <ThemeButton
-            className={`oceanwave ${
-              selectedTheme === oceanwave ? "active" : ""
-            }`}
-            onClick={() => HandleThemeChange(oceanwave)}></ThemeButton>
+            className={`blue ${selectedTheme === blue ? "active" : ""}`}
+            onClick={() => HandleThemeChange(blue)}></ThemeButton>
           <ThemeButton
-            className={`camouflage ${
-              selectedTheme === camouflage ? "active" : ""
-            }`}
-            onClick={() => HandleThemeChange(camouflage)}></ThemeButton>
+            className={`green ${selectedTheme === green ? "active" : ""}`}
+            onClick={() => HandleThemeChange(green)}></ThemeButton>
           <ThemeButton
-            className={`sunshine ${selectedTheme === sunshine ? "active" : ""}`}
-            onClick={() => HandleThemeChange(sunshine)}></ThemeButton>
+            className={`orange ${selectedTheme === orange ? "active" : ""}`}
+            onClick={() => HandleThemeChange(orange)}></ThemeButton>
           <ThemeButton
-            className={`barbie ${selectedTheme === barbie ? "active" : ""}`}
-            onClick={() => HandleThemeChange(barbie)}></ThemeButton>
+            className={`pink ${selectedTheme === pink ? "active" : ""}`}
+            onClick={() => HandleThemeChange(pink)}></ThemeButton>
         </ThemeContainer>
 
         <Quotes />

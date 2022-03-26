@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 body {
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
-  font-family: ${({ theme }) => theme.fontFamily};
+  font-family: monospace;
   overflow-x: hidden;
 }
 
@@ -24,17 +24,17 @@ body {
 .dark {
   background-color: ${theme.dark.colors.primary};
 }
-.oceanwave {
-  background-color: ${theme.oceanwave.colors.primary};
+.blue {
+  background-color: ${theme.blue.colors.primary};
 }
-.camouflage {
-  background-color: ${theme.camouflage.colors.primary};
+.green {
+  background-color: ${theme.green.colors.primary};
 }
-.sunshine {
-  background-color: ${theme.sunshine.colors.primary};
+.orange {
+  background-color: ${theme.orange.colors.primary};
 }
-.barbie {
-  background-color: ${theme.barbie.colors.primary};
+.pink {
+  background-color: ${theme.pink.colors.primary};
 }
 
 // active theme
