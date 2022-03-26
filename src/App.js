@@ -21,6 +21,18 @@ import {
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(light);
 
+  useEffect(() => {
+    const currentTheme = JSON.parse(localStorage.getItem("theme"));
+    if (currentTheme) {
+      setSelectedTheme(currentTheme);
+    }
+  }, []);
+
+  const HandleThemeChange = (theme) => {
+    setSelectedTheme(theme);
+    localStorage.setItem("theme", JSON.stringify(theme));
+  };
+
   return (
     <ThemeProvider theme={selectedTheme}>
       <>
@@ -31,38 +43,26 @@ function App() {
           <span>Themes: </span>
           <ThemeButton
             className={`light ${selectedTheme === light ? "active" : ""}`}
-            onClick={() => {
-              setSelectedTheme(light);
-            }}></ThemeButton>
+            onClick={() => HandleThemeChange(light)}></ThemeButton>
           <ThemeButton
             className={`dark ${selectedTheme === dark ? "active" : ""}`}
-            onClick={() => {
-              setSelectedTheme(dark);
-            }}></ThemeButton>
+            onClick={() => HandleThemeChange(dark)}></ThemeButton>
           <ThemeButton
             className={`oceanwave ${
               selectedTheme === oceanwave ? "active" : ""
             }`}
-            onClick={() => {
-              setSelectedTheme(oceanwave);
-            }}></ThemeButton>
+            onClick={() => HandleThemeChange(oceanwave)}></ThemeButton>
           <ThemeButton
             className={`camouflage ${
               selectedTheme === camouflage ? "active" : ""
             }`}
-            onClick={() => {
-              setSelectedTheme(camouflage);
-            }}></ThemeButton>
+            onClick={() => HandleThemeChange(camouflage)}></ThemeButton>
           <ThemeButton
             className={`sunshine ${selectedTheme === sunshine ? "active" : ""}`}
-            onClick={() => {
-              setSelectedTheme(sunshine);
-            }}></ThemeButton>
+            onClick={() => HandleThemeChange(sunshine)}></ThemeButton>
           <ThemeButton
             className={`barbie ${selectedTheme === barbie ? "active" : ""}`}
-            onClick={() => {
-              setSelectedTheme(barbie);
-            }}></ThemeButton>
+            onClick={() => HandleThemeChange(barbie)}></ThemeButton>
         </ThemeContainer>
 
         <Container>
