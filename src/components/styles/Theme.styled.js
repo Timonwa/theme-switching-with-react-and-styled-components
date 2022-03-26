@@ -1,4 +1,5 @@
 export const light = {
+  name: "light-theme",
   colors: {
     primary: "rgb(238, 238, 238)",
     footer: "rgb(97, 96, 96)",
@@ -10,12 +11,11 @@ export const light = {
     quoteBgc: "rgb(255, 255, 240)",
     border: "rgb(221, 221, 221)",
   },
-  fonts: {
-    family: "monospace",
-    size: "16px",
-  },
+  fontFamily: "monospace",
 };
+
 export const dark = {
+  name: "dark-theme",
   colors: {
     primary: "rgb(50, 50, 50)",
     footer: "rgb(238, 238, 238)",
@@ -27,12 +27,11 @@ export const dark = {
     quoteBgc: "rgb(90, 90, 90)",
     border: "rgb(200, 200, 200)",
   },
-  fonts: {
-    family: "cursive",
-    size: "16px",
-  },
+  fontFamily: "cursive",
 };
+
 export const oceanwave = {
+  name: "oceanwave-theme",
   colors: {
     primary: "rgb(173, 216, 230)",
     footer: "rgb(34, 90, 109)",
@@ -44,12 +43,11 @@ export const oceanwave = {
     quoteBgc: "rgb(255, 255, 255)",
     border: "rgb(221, 221, 221)",
   },
-  fonts: {
-    family: "sans-serif",
-    size: "16px",
-  },
+  fontFamily: "sans-serif",
 };
+
 export const camouflage = {
+  name: "camouflage-theme",
   colors: {
     primary: "rgb(3, 54, 26)",
     footer: "rgb(100, 200, 100)",
@@ -61,12 +59,11 @@ export const camouflage = {
     quoteBgc: "rgb(100, 255, 100)",
     border: "rgb(40, 255, 100)",
   },
-  fonts: {
-    family: "monospace",
-    size: "16px",
-  },
+  fontFamily: "monospace",
 };
+
 export const sunshine = {
+  name: "sunshine-theme",
   colors: {
     primary: "rgb(235, 166, 0)",
     footer: "rgb(248, 223, 202)",
@@ -78,12 +75,11 @@ export const sunshine = {
     quoteBgc: "rgb(255, 200, 100)",
     border: "rgb(224, 189, 33)",
   },
-  fonts: {
-    family: "monospace",
-    size: "16px",
-  },
+  fontFamily: "monospace",
 };
+
 export const barbie = {
+  name: "barbie-theme",
   colors: {
     primary: "rgb(214, 128, 185)",
     footer: "rgb(24, 24, 24)",
@@ -95,8 +91,5 @@ export const barbie = {
     quoteBgc: "rgb(252, 130, 252)",
     border: "rgb(153, 114, 140)",
   },
-  fonts: {
-    family: "monospace",
-    size: "16px",
-  },
+  fontFamily: "monospace",
 };

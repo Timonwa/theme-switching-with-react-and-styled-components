@@ -1,9 +1,14 @@
 import React from "react";
-import { Card, CardTitle, CardQuote } from "./styles/Quote.styled";
+import {
+  QuoteContainer,
+  Card,
+  CardTitle,
+  CardQuote,
+} from "./styles/Quote.styled";
 
 const Quotes = () => {
   return (
-    <>
+    <QuoteContainer>
       <Card>
         <CardTitle>Bran Stark</CardTitle>
         <CardQuote>
@@ -33,7 +38,7 @@ const Quotes = () => {
           </p>
         </CardQuote>
       </Card>
-    </>
+    </QuoteContainer>
   );
 };
 

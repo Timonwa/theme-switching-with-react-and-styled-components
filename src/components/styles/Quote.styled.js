@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const QuoteContainer = styled.section`
+  margin: 50px;
+`;
+
 export const Card = styled.div`
   background-color: ${({ theme }) => theme.colors.quoteBgc};
   border: 1px solid ${({ theme }) => theme.colors.quoteBorder};

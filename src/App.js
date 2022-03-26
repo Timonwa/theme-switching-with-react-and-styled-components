@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Quotes from "./components/Quotes";
-import { Container } from "./components/styles/Container.styled";
 import { Footer } from "./components/styles/Footer.styled";
 import { Header } from "./components/styles/Header.styled";
 import {
@@ -19,8 +18,10 @@ import {
 } from "./components/styles/Theme.styled";
 
 function App() {
+  // theme state
   const [selectedTheme, setSelectedTheme] = useState(light);
 
+  // react hook to get the theme selected by the user that is saved in local storage
   useEffect(() => {
     const currentTheme = JSON.parse(localStorage.getItem("theme"));
     if (currentTheme) {
@@ -28,6 +29,7 @@ function App() {
     }
   }, []);
 
+  // function to handle user theme selection on click and save it to local storage
   const HandleThemeChange = (theme) => {
     setSelectedTheme(theme);
     localStorage.setItem("theme", JSON.stringify(theme));
@@ -65,9 +67,7 @@ function App() {
             onClick={() => HandleThemeChange(barbie)}></ThemeButton>
         </ThemeContainer>
 
-        <Container>
-          <Quotes />
-        </Container>
+        <Quotes />
 
         <Footer>
           <p>
