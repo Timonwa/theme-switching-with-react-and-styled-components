@@ -46,7 +46,7 @@ export const blue = {
 export const green = {
   name: "green-theme",
   colors: {
-    primary: "hsl(150, 80%,10%)",
+    primary: "hsl(150, 80%, 15%)",
     background: "hsl(150, 80%, 20%)",
     footer: "hsl(150, 80%, 80%)",
     text: "hsl(150, 80%, 80%);",
