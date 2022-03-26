@@ -58,10 +58,10 @@ export const green = {
   },
 };
 
-export const orange = {
-  name: "orange-theme",
+export const brown = {
+  name: "brown-theme",
   colors: {
-    primary: "hsl(39, 100%, 50%)",
+    primary: "hsl(39, 70%, 50%)",
     background: "hsl(37, 83%, 54%)",
     footer: "hsl(39, 50%, 20%)",
     text: "hsl(100, 0%, 20%)",

@@ -7,8 +7,11 @@ export const QuoteContainer = styled.section`
 export const Card = styled.div`
   background-color: ${({ theme }) => theme.colors.quoteBgc};
   border: 1px solid ${({ theme }) => theme.colors.quoteBorder};
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   border-radius: 3px;
+  max-width: 450px;
 `;
 
 export const CardTitle = styled.div`

@@ -30,8 +30,8 @@ body {
 .green {
   background-color: ${theme.green.colors.primary};
 }
-.orange {
-  background-color: ${theme.orange.colors.primary};
+.brown {
+  background-color: ${theme.brown.colors.primary};
 }
 .pink {
   background-color: ${theme.pink.colors.primary};

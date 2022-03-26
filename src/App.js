@@ -13,13 +13,13 @@ import {
   dark,
   blue,
   green,
-  orange,
+  brown,
   pink,
 } from "./components/styles/Theme.styled";
 
 function App() {
   // theme state
-  const [selectedTheme, setSelectedTheme] = useState(orange);
+  const [selectedTheme, setSelectedTheme] = useState(brown);
 
   // react hook to get the theme selected by the user that is saved in local storage
   useEffect(() => {
@@ -56,8 +56,8 @@ function App() {
             className={`green ${selectedTheme === green ? "active" : ""}`}
             onClick={() => HandleThemeChange(green)}></ThemeButton>
           <ThemeButton
-            className={`orange ${selectedTheme === orange ? "active" : ""}`}
-            onClick={() => HandleThemeChange(orange)}></ThemeButton>
+            className={`brown ${selectedTheme === brown ? "active" : ""}`}
+            onClick={() => HandleThemeChange(brown)}></ThemeButton>
           <ThemeButton
             className={`pink ${selectedTheme === pink ? "active" : ""}`}
             onClick={() => HandleThemeChange(pink)}></ThemeButton>
