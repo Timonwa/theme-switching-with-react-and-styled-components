@@ -19,27 +19,26 @@ body {
 
 // theme buttons color
 .light {
-  background-color: ${theme.light.colors.primary};
+  background-color: ${theme.light.colors.header};
 }
 .dark {
-  background-color: ${theme.dark.colors.primary};
+  background-color: ${theme.dark.colors.header};
 }
 .blue {
-  background-color: ${theme.blue.colors.primary};
+  background-color: ${theme.blue.colors.header};
 }
 .green {
-  background-color: ${theme.green.colors.primary};
+  background-color: ${theme.green.colors.header};
 }
 .brown {
-  background-color: ${theme.brown.colors.primary};
+  background-color: ${theme.brown.colors.header};
 }
 .pink {
-  background-color: ${theme.pink.colors.primary};
+  background-color: ${theme.pink.colors.header};
 }
 
 // active theme
 .active{
     border: 3px solid ${({ theme }) => theme.colors.border};
-    opacity: 1;
 }
 `;

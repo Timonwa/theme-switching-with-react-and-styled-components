@@ -1,7 +1,7 @@
 export const light = {
   name: "light-theme",
   colors: {
-    primary: "hsl(0, 0%, 93%)",
+    header: "hsl(0, 0%, 93%)",
     background: "hsl(0, 0%, 100%)",
     footer: "hsl(0, 1%, 38%)",
     text: "hsl(0, 1%, 16%)",
@@ -16,7 +16,7 @@ export const light = {
 export const dark = {
   name: "dark-theme",
   colors: {
-    primary: "hsl(0, 0%, 20%)",
+    header: "hsl(0, 0%, 20%)",
     background: "hsl(0, 1%, 16%)",
     footer: "hsl(0, 0%, 93%)",
     text: "hsl(0, 0%, 100%)",
@@ -31,7 +31,7 @@ export const dark = {
 export const blue = {
   name: "blue-theme",
   colors: {
-    primary: "hsl(195, 53%, 79%)",
+    header: "hsl(195, 53%, 79%)",
     background: "hsl(194, 100%, 97%)",
     footer: "hsl(195, 52%, 28%)",
     text: "hsl(0, 1%, 16%)",
@@ -46,7 +46,7 @@ export const blue = {
 export const green = {
   name: "green-theme",
   colors: {
-    primary: "hsl(150, 80%, 15%)",
+    header: "hsl(150, 80%, 15%)",
     background: "hsl(150, 80%, 20%)",
     footer: "hsl(150, 80%, 80%)",
     text: "hsl(150, 80%, 80%);",
@@ -61,7 +61,7 @@ export const green = {
 export const brown = {
   name: "brown-theme",
   colors: {
-    primary: "hsl(39, 70%, 50%)",
+    header: "hsl(39, 70%, 50%)",
     background: "hsl(37, 83%, 54%)",
     footer: "hsl(39, 50%, 20%)",
     text: "hsl(100, 0%, 20%)",
@@ -76,7 +76,7 @@ export const brown = {
 export const pink = {
   name: "pink-theme",
   colors: {
-    primary: "hsl(350, 100%, 88%)",
+    header: "hsl(350, 100%, 88%)",
     background: "hsl(300, 80%, 88%)",
     footer: "hsl(300, 10%, 28%)",
     text: "hsl(300, 100%, 28%)",

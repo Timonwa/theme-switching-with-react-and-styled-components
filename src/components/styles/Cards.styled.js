@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const QuoteContainer = styled.section`
+export const CardsContainer = styled.section`
   margin: 50px;
 `;
 
@@ -22,7 +22,7 @@ export const CardTitle = styled.div`
   font-weight: bold;
 `;
 
-export const CardQuote = styled.div`
+export const CardBody = styled.div`
   color: ${({ theme }) => theme.colors.quoteBody};
   padding: 10px;
 `;
