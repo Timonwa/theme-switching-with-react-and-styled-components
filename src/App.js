@@ -37,8 +37,8 @@ function App() {
 
   return (
     <ThemeProvider theme={selectedTheme}>
-      <GlobalStyles />
       <div className="App">
+        <GlobalStyles />
         <Header>Game of Thrones Quotes</Header>
 
         <ThemeContainer>
