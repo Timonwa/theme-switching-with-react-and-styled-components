@@ -1,6 +1,6 @@
 # Theme Switching using Styled Components in ReactJs. :writing_hand:
 
-This is the code example for my article on [Build a React theme switcher app with styled-components](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/) for [LogRocket](https://logrocket.com). Here is the [live demo](https://theme-switching.vercel.app).
+This is the code example for my article on [Build a React theme switcher app with styled-components](https://blog.timonwa.com/build-a-react-theme-switcher-app-with-styled-components) for [LogRocket](https://logrocket.com). Here is the [live demo](https://theme-switching.vercel.app).
 
 ## Outline
 Using the ThemeProvider, a wrapper component available in styled-components, we can quickly set up multiple custom themes in React and switch between them with ease.
