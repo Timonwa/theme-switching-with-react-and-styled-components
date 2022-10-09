@@ -35,6 +35,14 @@ function App() {
     localStorage.setItem("current-theme", JSON.stringify(theme));
   };
 
+  // invert the current color of the selected theme
+  // const invertedSelectedTheme = ({ colors }) => ({
+  //   colors: {
+  //     background: colors.footer,
+  //     footer: colors.background,
+  //   },
+  // });
+
   return (
     <ThemeProvider theme={selectedTheme}>
       <div className="App">
@@ -65,11 +73,34 @@ function App() {
 
         <Quotes />
 
+        {/* Nesting ThemeProviders */}
+        {/* <ThemeProvider theme={pink}>
+          <Quotes />
+        </ThemeProvider> */}
+
         <Footer>
           <p>
-            Made with love by <a href="http://bio.link/timonwa">Timonwa</a>
+            Made with love by <a href="https://link.timonwa.com">Timonwa</a>
           </p>
         </Footer>
+
+        {/* Passing a theme directly into a component */}
+        {/* <Footer
+          theme={{
+            colors: {
+              background: "hsl(37, 83%, 54%)",
+              footer: "hsl(39, 50%, 20%)",
+            },
+          }}>
+          <p>
+            Made with love by <a href="https://link.timonwa.com">Timonwa</a>
+          </p>
+        </Footer> */}
+
+        {/* inverted theme */}
+        {/* <ThemeProvider theme={invertedSelectedTheme}>
+          <Footer>Inverted Footer</Footer>
+        </ThemeProvider> */}
       </div>
     </ThemeProvider>
   );
