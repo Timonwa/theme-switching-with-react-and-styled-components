@@ -92,9 +92,7 @@ function App() {
               footer: "hsl(39, 50%, 20%)",
             },
           }}>
-          <p>
-            Made with love by <a href="https://link.timonwa.com">Timonwa</a>
-          </p>
+         
         </Footer> */}
 
         {/* inverted theme */}
